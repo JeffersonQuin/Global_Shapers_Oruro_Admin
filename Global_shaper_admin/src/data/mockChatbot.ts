@@ -1,0 +1,14 @@
+import type { ChatbotKnowledge } from '@/types'
+
+const now = new Date().toISOString()
+
+export const mockChatbot: ChatbotKnowledge[] = [
+  { id: 'ck1', title: '¿Qué es Global Shapers?', content: 'Global Shapers Community es una red del Foro Económico Mundial de jóvenes líderes menores de 30 años que trabajan juntos para crear un impacto positivo en sus comunidades.', content_type: 'faq', category: 'about', tags: ['global shapers', 'quienes somos'], priority: 10, is_active: true, created_at: now, updated_at: now },
+  { id: 'ck2', title: '¿Qué es el Hub Oruro?', content: 'El Hub Oruro es parte de la red Global Shapers Community. Somos jóvenes comprometidos con el desarrollo de nuestra comunidad en Oruro, Bolivia.', content_type: 'faq', category: 'about', tags: ['hub oruro', 'quienes somos'], priority: 10, is_active: true, created_at: now, updated_at: now },
+  { id: 'ck3', title: '¿Cómo puedo participar?', content: 'Puedes participar asistiendo a nuestros eventos, uniéndote como voluntario, o completando el formulario "Participa con Nosotros" en la web.', content_type: 'faq', category: 'participation', tags: ['participar', 'unirse', 'voluntario'], priority: 9, is_active: true, created_at: now, updated_at: now },
+  { id: 'ck4', title: '¿Qué tipo de proyectos realizan?', content: 'Realizamos proyectos en educación, medio ambiente, salud, tecnología, arte y cultura, deporte y desarrollo social.', content_type: 'faq', category: 'initiatives', tags: ['proyectos', 'iniciativas'], priority: 8, is_active: true, created_at: now, updated_at: now },
+  { id: 'ck5', title: 'Requisitos para ser Shaper', content: 'Debes tener menos de 28 años, residir en Oruro y disponer de algunas horas semanales para los proyectos.', content_type: 'general', category: 'participation', tags: ['requisitos', 'edad'], priority: 7, is_active: true, created_at: now, updated_at: now },
+  { id: 'ck6', title: '¿Cómo contactar al Hub?', content: 'Puedes escribirnos a info@shapersoruro.org o a través del formulario de contacto en nuestra página web.', content_type: 'faq', category: 'contact', tags: ['contacto', 'email'], priority: 6, is_active: true, created_at: now, updated_at: now },
+  { id: 'ck7', title: 'Próximos eventos', content: 'Publicamos nuestros eventos en la sección de Eventos del sitio web. Revisa con frecuencia para no perderte ninguno.', content_type: 'event', category: 'events', tags: ['eventos', 'agenda'], priority: 5, is_active: true, created_at: now, updated_at: now },
+  { id: 'ck8', title: 'Propuestas de la comunidad', content: 'Si tienes una idea o identificas un problema en tu comunidad, puedes enviarnos tu propuesta a través del formulario correspondiente.', content_type: 'general', category: 'proposals', tags: ['propuestas', 'ideas'], priority: 4, is_active: false, created_at: now, updated_at: now },
+]
